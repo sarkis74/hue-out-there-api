@@ -32,38 +32,3 @@ const bulb = process.argv[2]; // which bulb to change: 1, 2, 6, or 7
 const onOrOff = process.argv[3]; // on or off
 const possibleArgs = [1, 2, 6, 7];
 
-// error handling
-// if(!possibleArgs.includes(parseInt(bulb))) {
-//   throw new Error('Must be 1, 2, 6, or 7');
-// }
-
-// // you can run: 'node bridge.js <light id>  <'on/off'>'
-// switch(onOrOff) {
-//     case 'on':
-//         api.setLightState(bulb, state.on())
-//             .then(displayResults)
-//             .fail(displayError)
-//             .done();
-//         break;
-//     case 'off':
-//         api.setLightState(bulb, state.off())
-//             .then(displayResults)
-//             .fail(displayError)
-//             .done();
-//         break;
-//     // you can run: 'node bridge.js <light id> groupon'
-//     case 'groupon':
-//         api.setGroupLightState(4, state.on())
-//             .then(displayResults)
-//             .fail(displayError)
-//             .done();
-//         break;
-//     case 'groupoff':
-//         api.setGroupLightState(4, state.off())
-//             .then(displayResults)
-//             .fail(displayError)
-//             .done();
-//         break;
-//     default:
-//         console.log('Sorry, invalid method');
-// }
